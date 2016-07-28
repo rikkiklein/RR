@@ -134,5 +134,19 @@
 $(document).ready(function(){
 	// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
 	$('.modal-trigger').leanModal();
+
+
+
+	document.getElementById("math").addEventListener("click", function(){
+	 console.log("Math trivia was clicked!");
+	 var url = "https://rikkirabz.github.io/Math-Trivia/";
+	 window.open(url);
+ })
+
+ document.getElementById("weather").addEventListener("click", function(){
+	console.log("Weather was clicked!");
+	var url = "https://rikkirabz.github.io/API_PROJECT2_FE/";
+	window.open(url);
+})
+
 });
-		 

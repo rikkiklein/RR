@@ -86,17 +86,30 @@ ul li{
   order: 1;
 }
 
-#math-trivia{
+#math-trivia, #weather-api{
   border: 3px solid #99cfe0;
   border: 3px solid rgba(255,255,255, .9);
-  background: url("../../images/math.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   cursor: pointer;
 }
 
-#math-trivia:hover{
+#math-trivia{
+	background: url("../../images/math.jpg");
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#weather-api{
+	background: url("../../images/weather.jpg");
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right 30% center;
+}
+
+#math-trivia:hover, #weather-api:hover{
   opacity: .84;
   border: 3px solid rgba(0,0,0,.319);
   -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
@@ -1356,7 +1369,16 @@ body.is-loading #intro .content {
   z-index: 1;
   will-change: opacity, transform;
   transition: all .3s ease-out;
+  justify-content: center;
+  text-align: center;
+  	border: 1px dotted purple;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-radius: 5px;
 }
+
 
 .waves-effect .waves-ripple {
   position: absolute;
@@ -1374,6 +1396,7 @@ body.is-loading #intro .content {
   -webkit-transform: scale(0);
           transform: scale(0);
   pointer-events: none;
+
 }
 
 .waves-effect.waves-light .waves-ripple {
@@ -1432,6 +1455,7 @@ body.is-loading #intro .content {
   top: 0;
   left: 0;
   z-index: 1;
+
 }
 
 .waves-circle {
@@ -1441,10 +1465,12 @@ body.is-loading #intro .content {
   line-height: 2.5em;
   border-radius: 50%;
   -webkit-mask-image: none;
+
 }
 
 .waves-block {
   display: block;
+
 }
 
 /* Firefox Bug: link not triggered */
